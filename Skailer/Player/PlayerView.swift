@@ -45,10 +45,11 @@ struct PlayerView: View {
                 
                 Spacer()
                 
-                HStack {
+                HStack(alignment: .center, spacing: 12) {
                     Text("01:34").foregroundColor(.text_primary)
                         .modifier(FontModifier(.bold, size: 12))
-                    Spacer()
+                    Slider(value: $viewModel.slider, in: -100...100)
+                        .accentColor(.main_color)
                     Button(action: { viewModel.liked.toggle() }) {
                         (viewModel.liked ? Image.heart_filled : Image.heart)
                             .resizable().frame(width: 20, height: 20)
@@ -65,8 +66,9 @@ struct PlayerView: View {
                             .cornerRadius(40).modifier(NeuShadow())
                     }
                     Spacer()
-                    Button(action: {  }) {
-                        Image.pause.resizable().frame(width: 28, height: 28)
+                    Button(action: { viewModel.isPlaying.toggle() }) {
+                        (viewModel.isPlaying ? Image.pause : Image.play)
+                            .resizable().frame(width: 28, height: 28)
                             .padding(50).background(Color.main_color)
                             .cornerRadius(70).modifier(NeuShadow())
                     }
