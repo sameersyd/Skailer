@@ -49,7 +49,7 @@ struct PlayerView: View {
                     Text("01:34").foregroundColor(.text_primary)
                         .modifier(FontModifier(.bold, size: 12))
                     Slider(value: $viewModel.slider, in: 0...100)
-                        .accentColor(.main_color)
+                        .accentColor(.main_white)
                     Button(action: { viewModel.liked.toggle() }) {
                         (viewModel.liked ? Image.heart_filled : Image.heart)
                             .resizable().frame(width: 20, height: 20)

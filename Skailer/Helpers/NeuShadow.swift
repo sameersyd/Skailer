@@ -10,9 +10,9 @@ import SwiftUI
 struct NeuShadow: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .shadow(color: Color(hex: "FFFFFF", alpha: 0.2), radius: 1, x: -7, y: -7)
-            .shadow(color: Color(hex: "F6FBFF", alpha: 0.7), radius: 4, x: -13, y: -7)
-            .shadow(color: Color(hex: "F4F8FB", alpha: 0.3), radius: 10, x: -8, y: 5)
-            .shadow(color: Color(hex: "AABBC9", alpha: 0.8), radius: 10, x: 10, y: 9)
+            .shadow(color: Color("neuColor1"), radius: 1, x: -7, y: -7)
+            .shadow(color: Color("neuColor2"), radius: 4, x: -13, y: -7)
+            .shadow(color: Color("neuColor3"), radius: 10, x: -8, y: 5)
+            .shadow(color: Color("neuColor4"), radius: 10, x: 10, y: 9)
     }
 }
