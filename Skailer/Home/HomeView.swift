@@ -14,8 +14,11 @@ struct HomeView: View {
     var body: some View {
         ZStack {
             Color.primary_color.edgesIgnoringSafeArea(.all)
+            
             ScrollView(.vertical, showsIndicators: false) {
-                VStack(alignment: .leading, spacing: 36) {
+                VStack(alignment: .leading, spacing: 0) {
+                    
+                    // Header
                     HStack(alignment: .center) {
                         Text(viewModel.headerStr).foregroundColor(.text_header)
                             .modifier(FontModifier(.black, size: 28))
@@ -25,14 +28,34 @@ struct HomeView: View {
                                 .padding(12).background(Color.primary_color)
                                 .cornerRadius(20).modifier(NeuShadow())
                         }
-                    }.padding(.top, 12)
+                    }.padding(.top, 12).padding(.horizontal, 16)
                     
-                    Text("Your Playlist").foregroundColor(.text_header)
+                    // Playlists
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text("Your Playlist").foregroundColor(.text_header)
+                            .modifier(FontModifier(.bold, size: 20))
+                            .padding(.leading, 16)
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack {
+                                ForEach(0..<viewModel.playlists.count, id: \.self) { i in
+                                    Button(action: {  }, label: {
+                                        PlaylistView(name: viewModel.playlists[i].name,
+                                                         artistName: viewModel.playlists[i].artistName,
+                                                         coverImage: viewModel.playlists[i].coverImage)
+                                    }).padding(.top, 6).padding(.bottom, 40)
+                                }
+                            }.padding(.horizontal, 16)
+                        }
+                    }.padding(.top, 36).animation(.spring())
+                    
+                    // Recently Played
+                    Text("Recently Played").foregroundColor(.text_header)
                         .modifier(FontModifier(.bold, size: 20))
+                        .padding(.leading, 16)
                     
                     Spacer().frame(height: 150)
                     Spacer()
-                }.padding(.horizontal, 16)
+                }
             }
         }
     }

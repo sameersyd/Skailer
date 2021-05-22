@@ -13,7 +13,9 @@ struct Data {
         return [
             MusicModel(name: "You & Me", artistName: "Imagine Dragons", coverImage: Image.cover5),
             MusicModel(name: "Heart Beats", artistName: "The Chainsmokers", coverImage: Image.cover1),
-            MusicModel(name: "Young Love", artistName: "Selena Gomez", coverImage: Image.cover2)
+            MusicModel(name: "Young Love", artistName: "Selena Gomez", coverImage: Image.cover2),
+            MusicModel(name: "Falling", artistName: "Harry Styles", coverImage: Image.cover4),
+            MusicModel(name: "Bad Liar", artistName: "Anna Hamilton", coverImage: Image.cover3)
         ]
     }
     
@@ -21,7 +23,9 @@ struct Data {
         return [
             MusicModel(name: "Falling", artistName: "Harry Styles", coverImage: Image.cover4),
             MusicModel(name: "Bad Liar", artistName: "Anna Hamilton", coverImage: Image.cover3),
-            MusicModel(name: "Young Love", artistName: "Selena Gomez", coverImage: Image.cover2)
+            MusicModel(name: "Young Love", artistName: "Selena Gomez", coverImage: Image.cover2),
+            MusicModel(name: "You & Me", artistName: "Imagine Dragons", coverImage: Image.cover5),
+            MusicModel(name: "Heart Beats", artistName: "The Chainsmokers", coverImage: Image.cover1)
         ]
     }
 }
