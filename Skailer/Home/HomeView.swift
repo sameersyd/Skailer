@@ -49,9 +49,20 @@ struct HomeView: View {
                     }.padding(.top, 36).animation(.spring())
                     
                     // Recently Played
-                    Text("Recently Played").foregroundColor(.text_header)
-                        .modifier(FontModifier(.bold, size: 20))
-                        .padding(.leading, 16)
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text("Recently Played").foregroundColor(.text_header)
+                            .modifier(FontModifier(.bold, size: 20))
+                            .padding(.leading, 16)
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack {
+                                ForEach(0..<viewModel.recentlyPlayed.count, id: \.self) { i in
+                                    Button(action: {  }, label: {
+                                        MusicDiscView()
+                                    }).padding(.top, 6).padding(.bottom, 40)
+                                }
+                            }.padding(.horizontal, 16)
+                        }
+                    }.padding(.top, 36).animation(.spring())
                     
                     Spacer().frame(height: 150)
                     Spacer()
