@@ -18,6 +18,8 @@ extension Image {
     static let heart_filled = Image("heart-filled_icon")
     static let next = Image("next_icon")
     
+    // Profile Pic
+    static let profile_pic = Image("profile_pic")
     // cover images
     static let cover1 = Image("cover1")
     static let cover2 = Image("cover2")

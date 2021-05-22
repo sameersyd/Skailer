@@ -17,54 +17,14 @@ struct HomeView: View {
             
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 0) {
-                    
                     // Header
-                    HStack(alignment: .center) {
-                        Text(viewModel.headerStr).foregroundColor(.text_header)
-                            .modifier(FontModifier(.black, size: 28))
-                        Spacer()
-                        Button(action: {  }) {
-                            Image.search.resizable().frame(width: 16, height: 16)
-                                .padding(12).background(Color.primary_color)
-                                .cornerRadius(20).modifier(NeuShadow())
-                        }
-                    }.padding(.top, 12).padding(.horizontal, 16)
-                    
+                    HomeHeaderView(headerStr: viewModel.headerStr)
                     // Playlists
-                    VStack(alignment: .leading, spacing: 0) {
-                        Text("Your Playlist").foregroundColor(.text_header)
-                            .modifier(FontModifier(.bold, size: 20))
-                            .padding(.leading, 16)
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack {
-                                ForEach(0..<viewModel.playlists.count, id: \.self) { i in
-                                    Button(action: {  }, label: {
-                                        PlaylistView(name: viewModel.playlists[i].name,
-                                                         artistName: viewModel.playlists[i].artistName,
-                                                         coverImage: viewModel.playlists[i].coverImage)
-                                    }).padding(.top, 6).padding(.bottom, 40)
-                                }
-                            }.padding(.horizontal, 16)
-                        }
-                    }.padding(.top, 36)
-                    
+                    HomePlaylistView(playlists: viewModel.playlists)
                     // Recently Played
-                    VStack(alignment: .leading, spacing: 0) {
-                        Text("Recently Played").foregroundColor(.text_header)
-                            .modifier(FontModifier(.bold, size: 20))
-                            .padding(.leading, 16)
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack {
-                                ForEach(0..<viewModel.recentlyPlayed.count, id: \.self) { i in
-                                    Button(action: {  }, label: {
-                                        MusicDiscView(name: viewModel.recentlyPlayed[i].name,
-                                                         artistName: viewModel.recentlyPlayed[i].artistName,
-                                                         coverImage: viewModel.recentlyPlayed[i].coverImage)
-                                    }).padding(.top, 6).padding(.bottom, 40)
-                                }
-                            }.padding(.horizontal, 16)
-                        }
-                    }
+                    HomeRecentlyPlayedView(recentlyPlayed: viewModel.recentlyPlayed)
+                    // Made for You
+                    HomeMadeForView()
                     
                     Spacer().frame(height: 150)
                     Spacer()
@@ -74,8 +34,74 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
+
+fileprivate struct HomeHeaderView: View {
+    let headerStr: String
+    var body: some View {
+        HStack(alignment: .center) {
+            Text(headerStr).foregroundColor(.text_header)
+                .modifier(FontModifier(.black, size: 28))
+            Spacer()
+            Button(action: {  }) {
+                Image.search.resizable().frame(width: 16, height: 16)
+                    .padding(12).background(Color.primary_color)
+                    .cornerRadius(20).modifier(NeuShadow())
+            }
+        }.padding(.top, 12).padding(.horizontal, 16)
+    }
+}
+
+fileprivate struct HomePlaylistView: View {
+    let playlists: [MusicModel]
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Text("Your Playlist").foregroundColor(.text_header)
+                .modifier(FontModifier(.bold, size: 20)).padding(.leading, 16)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(0..<playlists.count, id: \.self) { i in
+                        Button(action: {  }, label: {
+                            PlaylistView(name: playlists[i].name,
+                                         artistName: playlists[i].artistName,
+                                         coverImage: playlists[i].coverImage)
+                        }).padding(.top, 6).padding(.bottom, 40)
+                    }
+                }.padding(.horizontal, 16)
+            }
+        }.padding(.top, 36)
+    }
+}
+
+fileprivate struct HomeRecentlyPlayedView: View {
+    let recentlyPlayed: [MusicModel]
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Text("Recently Played").foregroundColor(.text_header)
+                .modifier(FontModifier(.bold, size: 20)).padding(.leading, 16)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(0..<recentlyPlayed.count, id: \.self) { i in
+                        Button(action: {  }, label: {
+                            MusicDiscView(name: recentlyPlayed[i].name,
+                                          artistName: recentlyPlayed[i].artistName,
+                                          coverImage: recentlyPlayed[i].coverImage)
+                        }).padding(.top, 6).padding(.bottom, 40)
+                    }
+                }.padding(.horizontal, 16)
+            }
+        }
+    }
+}
+
+fileprivate struct HomeMadeForView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Text("Made for You").foregroundColor(.text_header)
+                .modifier(FontModifier(.bold, size: 20))
+                .padding(.leading, 16)
+            Button(action: {  }, label: {
+                MadeForView()
+            }).padding([.horizontal, .top], 16).padding(.bottom, 40)
+        }
     }
 }

@@ -24,6 +24,7 @@
 		73CDED0026590914006C1B23 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDECFF26590914006C1B23 /* Data.swift */; };
 		73CDED0326591700006C1B23 /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDED0226591700006C1B23 /* PlaylistView.swift */; };
 		73CDED0526591760006C1B23 /* MusicDiscView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDED0426591760006C1B23 /* MusicDiscView.swift */; };
+		73CDED0726592124006C1B23 /* MadeForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDED0626592124006C1B23 /* MadeForView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		73CDECFF26590914006C1B23 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		73CDED0226591700006C1B23 /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
 		73CDED0426591760006C1B23 /* MusicDiscView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDiscView.swift; sourceTree = "<group>"; };
+		73CDED0626592124006C1B23 /* MadeForView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeForView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				73CDED0226591700006C1B23 /* PlaylistView.swift */,
 				73CDED0426591760006C1B23 /* MusicDiscView.swift */,
+				73CDED0626592124006C1B23 /* MadeForView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CDECE52658F6C1006C1B23 /* ColorExtension.swift in Sources */,
+				73CDED0726592124006C1B23 /* MadeForView.swift in Sources */,
 				73CDECF42659050D006C1B23 /* NeuShadow.swift in Sources */,
 				73CDECF9265906CC006C1B23 /* HomeViewModel.swift in Sources */,
 				73CDED0526591760006C1B23 /* MusicDiscView.swift in Sources */,
