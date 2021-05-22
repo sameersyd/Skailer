@@ -27,9 +27,4 @@ extension Image {
     static let cover3 = Image("cover3")
     static let cover4 = Image("cover4")
     static let cover5 = Image("cover5")
-    static let cover6 = Image("cover6")
-    static let cover7 = Image("cover7")
-    static let cover8 = Image("cover8")
-    static let cover9 = Image("cover9")
-    static let cover10 = Image("cover10")
 }
