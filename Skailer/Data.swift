@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Data {
     
+    static let MADE_FOR_YOU = MusicModel(name: "Bad Liar", artistName: "Anna Hamilton", coverImage: Image.cover3)
+    
     static func getPlaylists() -> [MusicModel] {
         return [
             MusicModel(name: "You & Me", artistName: "Imagine Dragons", coverImage: Image.cover5),

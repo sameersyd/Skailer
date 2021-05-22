@@ -13,6 +13,9 @@ class HomeViewModel: ObservableObject {
     @Published private(set) var playlists = [MusicModel]()
     @Published private(set) var recentlyPlayed = [MusicModel]()
     
+    @Published private(set) var selectedMusic: MusicModel? = nil
+    @Published var displayPlayer = false
+    
     init() {
         fetchPlaylist()
         fetchRecentlyPlayed()
@@ -24,5 +27,10 @@ class HomeViewModel: ObservableObject {
     
     private func fetchRecentlyPlayed() {
         recentlyPlayed = Data.getRecentlyPlayed()
+    }
+    
+    func selectMusic(music: MusicModel) {
+        selectedMusic = music
+        displayPlayer = true
     }
 }

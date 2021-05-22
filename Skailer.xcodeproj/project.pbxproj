@@ -25,6 +25,7 @@
 		73CDED0326591700006C1B23 /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDED0226591700006C1B23 /* PlaylistView.swift */; };
 		73CDED0526591760006C1B23 /* MusicDiscView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDED0426591760006C1B23 /* MusicDiscView.swift */; };
 		73CDED0726592124006C1B23 /* MadeForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDED0626592124006C1B23 /* MadeForView.swift */; };
+		73CDED0A26592BD7006C1B23 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDED0926592BD7006C1B23 /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		73CDED0226591700006C1B23 /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
 		73CDED0426591760006C1B23 /* MusicDiscView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDiscView.swift; sourceTree = "<group>"; };
 		73CDED0626592124006C1B23 /* MadeForView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeForView.swift; sourceTree = "<group>"; };
+		73CDED0926592BD7006C1B23 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		73CDECD12658F5F7006C1B23 /* Skailer */ = {
 			isa = PBXGroup;
 			children = (
+				73CDED0826592BBE006C1B23 /* Player */,
 				73CDED01265916EA006C1B23 /* Views */,
 				73CDECFA26590845006C1B23 /* Model */,
 				73CDECF526590698006C1B23 /* Home */,
@@ -149,6 +152,14 @@
 				73CDED0626592124006C1B23 /* MadeForView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		73CDED0826592BBE006C1B23 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				73CDED0926592BD7006C1B23 /* PlayerView.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 				73CDED0526591760006C1B23 /* MusicDiscView.swift in Sources */,
 				73CDECD32658F5F7006C1B23 /* SkailerApp.swift in Sources */,
 				73CDED0326591700006C1B23 /* PlaylistView.swift in Sources */,
+				73CDED0A26592BD7006C1B23 /* PlayerView.swift in Sources */,
 				73CDECF7265906BD006C1B23 /* HomeView.swift in Sources */,
 				73CDECFE2659089C006C1B23 /* MusicModel.swift in Sources */,
 				73CDECE92658F703006C1B23 /* ImageExtension.swift in Sources */,
