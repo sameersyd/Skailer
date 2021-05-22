@@ -10,7 +10,6 @@ import SwiftUI
 extension Color {
     
     static let primary_color = Color(hex: "EFF0F9")
-    
     static let text_header = Color(hex: "333333")
     
     init(hex: String, alpha: Double = 1) {

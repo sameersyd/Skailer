@@ -10,7 +10,6 @@
 		73CDECD32658F5F7006C1B23 /* SkailerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDECD22658F5F7006C1B23 /* SkailerApp.swift */; };
 		73CDECD72658F5FA006C1B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73CDECD62658F5FA006C1B23 /* Assets.xcassets */; };
 		73CDECDA2658F5FA006C1B23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73CDECD92658F5FA006C1B23 /* Preview Assets.xcassets */; };
-		73CDECE22658F671006C1B23 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDECE12658F671006C1B23 /* HomeView.swift */; };
 		73CDECE52658F6C1006C1B23 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDECE42658F6C1006C1B23 /* ColorExtension.swift */; };
 		73CDECE72658F6E7006C1B23 /* FontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDECE62658F6E7006C1B23 /* FontModifier.swift */; };
 		73CDECE92658F703006C1B23 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDECE82658F703006C1B23 /* ImageExtension.swift */; };
@@ -18,6 +17,11 @@
 		73CDECF02658F833006C1B23 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73CDECEC2658F833006C1B23 /* Lato-Bold.ttf */; };
 		73CDECF12658F833006C1B23 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73CDECED2658F833006C1B23 /* Lato-Regular.ttf */; };
 		73CDECF22658F833006C1B23 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73CDECEE2658F833006C1B23 /* Lato-Black.ttf */; };
+		73CDECF42659050D006C1B23 /* NeuShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDECF32659050D006C1B23 /* NeuShadow.swift */; };
+		73CDECF7265906BD006C1B23 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDECF6265906BD006C1B23 /* HomeView.swift */; };
+		73CDECF9265906CC006C1B23 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDECF8265906CC006C1B23 /* HomeViewModel.swift */; };
+		73CDECFE2659089C006C1B23 /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDECFD2659089C006C1B23 /* MusicModel.swift */; };
+		73CDED0026590914006C1B23 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDECFF26590914006C1B23 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +30,6 @@
 		73CDECD62658F5FA006C1B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73CDECD92658F5FA006C1B23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73CDECDB2658F5FA006C1B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73CDECE12658F671006C1B23 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		73CDECE42658F6C1006C1B23 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		73CDECE62658F6E7006C1B23 /* FontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontModifier.swift; sourceTree = "<group>"; };
 		73CDECE82658F703006C1B23 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
@@ -34,6 +37,11 @@
 		73CDECEC2658F833006C1B23 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		73CDECED2658F833006C1B23 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		73CDECEE2658F833006C1B23 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		73CDECF32659050D006C1B23 /* NeuShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuShadow.swift; sourceTree = "<group>"; };
+		73CDECF6265906BD006C1B23 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		73CDECF8265906CC006C1B23 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		73CDECFD2659089C006C1B23 /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		73CDECFF26590914006C1B23 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +74,15 @@
 		73CDECD12658F5F7006C1B23 /* Skailer */ = {
 			isa = PBXGroup;
 			children = (
+				73CDECFA26590845006C1B23 /* Model */,
+				73CDECF526590698006C1B23 /* Home */,
 				73CDECEA2658F7DC006C1B23 /* Lato */,
 				73CDECE32658F6A1006C1B23 /* Helpers */,
 				73CDECD22658F5F7006C1B23 /* SkailerApp.swift */,
 				73CDECD62658F5FA006C1B23 /* Assets.xcassets */,
 				73CDECDB2658F5FA006C1B23 /* Info.plist */,
 				73CDECD82658F5FA006C1B23 /* Preview Content */,
-				73CDECE12658F671006C1B23 /* HomeView.swift */,
+				73CDECFF26590914006C1B23 /* Data.swift */,
 			);
 			path = Skailer;
 			sourceTree = "<group>";
@@ -91,6 +101,7 @@
 				73CDECE42658F6C1006C1B23 /* ColorExtension.swift */,
 				73CDECE62658F6E7006C1B23 /* FontModifier.swift */,
 				73CDECE82658F703006C1B23 /* ImageExtension.swift */,
+				73CDECF32659050D006C1B23 /* NeuShadow.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -104,6 +115,23 @@
 				73CDECEB2658F833006C1B23 /* Lato-Semibold.ttf */,
 			);
 			path = Lato;
+			sourceTree = "<group>";
+		};
+		73CDECF526590698006C1B23 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				73CDECF6265906BD006C1B23 /* HomeView.swift */,
+				73CDECF8265906CC006C1B23 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		73CDECFA26590845006C1B23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				73CDECFD2659089C006C1B23 /* MusicModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +208,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CDECE52658F6C1006C1B23 /* ColorExtension.swift in Sources */,
-				73CDECE22658F671006C1B23 /* HomeView.swift in Sources */,
+				73CDECF42659050D006C1B23 /* NeuShadow.swift in Sources */,
+				73CDECF9265906CC006C1B23 /* HomeViewModel.swift in Sources */,
 				73CDECD32658F5F7006C1B23 /* SkailerApp.swift in Sources */,
+				73CDECF7265906BD006C1B23 /* HomeView.swift in Sources */,
+				73CDECFE2659089C006C1B23 /* MusicModel.swift in Sources */,
 				73CDECE92658F703006C1B23 /* ImageExtension.swift in Sources */,
+				73CDED0026590914006C1B23 /* Data.swift in Sources */,
 				73CDECE72658F6E7006C1B23 /* FontModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
