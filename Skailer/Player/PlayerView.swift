@@ -13,7 +13,7 @@ struct PlayerView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    let model: MusicModel
+    @StateObject var viewModel: PlayerViewModel
     
     var body: some View {
         ZStack {
@@ -34,12 +34,12 @@ struct PlayerView: View {
                     }
                 }.padding(.horizontal, HORIZONTAL_SPACING).padding(.top, 12)
                 
-                PlayerDiscView(coverImage: model.coverImage)
+                PlayerDiscView(coverImage: viewModel.model.coverImage)
                 
-                Text(model.name).foregroundColor(.text_primary)
+                Text(viewModel.model.name).foregroundColor(.text_primary)
                     .modifier(FontModifier(.black, size: 30))
                     .padding(.top, 12)
-                Text(model.artistName).foregroundColor(.text_primary_f1)
+                Text(viewModel.model.artistName).foregroundColor(.text_primary_f1)
                     .modifier(FontModifier(.semibold, size: 18))
                     .padding(.top, 12)
                 
@@ -49,10 +49,11 @@ struct PlayerView: View {
                     Text("01:34").foregroundColor(.text_primary)
                         .modifier(FontModifier(.bold, size: 12))
                     Spacer()
-                    Button(action: {  }) {
-                        Image.heart_filled.resizable().frame(width: 20, height: 20)
+                    Button(action: { viewModel.liked.toggle() }) {
+                        (viewModel.liked ? Image.heart_filled : Image.heart)
+                            .resizable().frame(width: 20, height: 20)
                     }
-                }.padding(.horizontal, 40)
+                }.padding(.horizontal, 45)
                 
                 Spacer()
                 
@@ -76,7 +77,7 @@ struct PlayerView: View {
                             .cornerRadius(40).modifier(NeuShadow())
                     }
                 }.padding(.horizontal, 32)
-            }.padding(.bottom, HORIZONTAL_SPACING)
+            }.padding(.bottom, HORIZONTAL_SPACING).animation(.spring())
         }
     }
 }

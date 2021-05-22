@@ -26,6 +26,7 @@
 		73CDED0526591760006C1B23 /* MusicDiscView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDED0426591760006C1B23 /* MusicDiscView.swift */; };
 		73CDED0726592124006C1B23 /* MadeForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDED0626592124006C1B23 /* MadeForView.swift */; };
 		73CDED0A26592BD7006C1B23 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDED0926592BD7006C1B23 /* PlayerView.swift */; };
+		73CDED0C26593F6F006C1B23 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CDED0B26593F6F006C1B23 /* PlayerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		73CDED0426591760006C1B23 /* MusicDiscView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDiscView.swift; sourceTree = "<group>"; };
 		73CDED0626592124006C1B23 /* MadeForView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeForView.swift; sourceTree = "<group>"; };
 		73CDED0926592BD7006C1B23 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		73CDED0B26593F6F006C1B23 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				73CDED0926592BD7006C1B23 /* PlayerView.swift */,
+				73CDED0B26593F6F006C1B23 /* PlayerViewModel.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				73CDECF42659050D006C1B23 /* NeuShadow.swift in Sources */,
 				73CDECF9265906CC006C1B23 /* HomeViewModel.swift in Sources */,
 				73CDED0526591760006C1B23 /* MusicDiscView.swift in Sources */,
+				73CDED0C26593F6F006C1B23 /* PlayerViewModel.swift in Sources */,
 				73CDECD32658F5F7006C1B23 /* SkailerApp.swift in Sources */,
 				73CDED0326591700006C1B23 /* PlaylistView.swift in Sources */,
 				73CDED0A26592BD7006C1B23 /* PlayerView.swift in Sources */,

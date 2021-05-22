@@ -33,7 +33,7 @@ struct HomeView: View {
                 }
                 .fullScreenCover(isPresented: $viewModel.displayPlayer) {
                     if let model = viewModel.selectedMusic {
-                        PlayerView(model: model)
+                        PlayerView(viewModel: PlayerViewModel(model: model))
                     }
                 }
             }.animation(.spring()).edgesIgnoringSafeArea([.horizontal, .bottom])
