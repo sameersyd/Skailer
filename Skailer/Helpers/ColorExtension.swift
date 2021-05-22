@@ -14,6 +14,8 @@ extension Color {
     static let text_primary = Color(hex: "657592")
     static let text_primary_f1 = Color.text_primary.opacity(0.8)
     
+    static let disc_line = Color(hex: "666666")
+    
     init(hex: String, alpha: Double = 1) {
         var cString: String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         if (cString.hasPrefix("#")) { cString.remove(at: cString.startIndex) }

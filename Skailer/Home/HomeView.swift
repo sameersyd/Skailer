@@ -46,7 +46,7 @@ struct HomeView: View {
                                 }
                             }.padding(.horizontal, 16)
                         }
-                    }.padding(.top, 36).animation(.spring())
+                    }.padding(.top, 36)
                     
                     // Recently Played
                     VStack(alignment: .leading, spacing: 0) {
@@ -57,17 +57,19 @@ struct HomeView: View {
                             HStack {
                                 ForEach(0..<viewModel.recentlyPlayed.count, id: \.self) { i in
                                     Button(action: {  }, label: {
-                                        MusicDiscView()
+                                        MusicDiscView(name: viewModel.recentlyPlayed[i].name,
+                                                         artistName: viewModel.recentlyPlayed[i].artistName,
+                                                         coverImage: viewModel.recentlyPlayed[i].coverImage)
                                     }).padding(.top, 6).padding(.bottom, 40)
                                 }
                             }.padding(.horizontal, 16)
                         }
-                    }.padding(.top, 36).animation(.spring())
+                    }
                     
                     Spacer().frame(height: 150)
                     Spacer()
                 }
-            }
+            }.animation(.spring()).edgesIgnoringSafeArea([.horizontal, .bottom])
         }
     }
 }
