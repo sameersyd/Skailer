@@ -48,7 +48,7 @@ struct PlayerView: View {
                 HStack(alignment: .center, spacing: 12) {
                     Text("01:34").foregroundColor(.text_primary)
                         .modifier(FontModifier(.bold, size: 12))
-                    Slider(value: $viewModel.slider, in: -100...100)
+                    Slider(value: $viewModel.slider, in: 0...100)
                         .accentColor(.main_color)
                     Button(action: { viewModel.liked.toggle() }) {
                         (viewModel.liked ? Image.heart_filled : Image.heart)

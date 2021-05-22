@@ -12,7 +12,7 @@ class PlayerViewModel: ObservableObject {
     let model: MusicModel
     
     @Published var liked = true
-    @Published var slider: Double = 0
+    @Published var slider: Double = 30
     @Published var isPlaying = true
     
     init(model: MusicModel) {
