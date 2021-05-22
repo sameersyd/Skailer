@@ -10,6 +10,8 @@ import SwiftUI
 extension Color {
     
     static let primary_color = Color(hex: "EFF0F9")
+    static let main_color = Color(hex: "657592")
+    
     static let text_header = Color(hex: "333333")
     static let text_primary = Color(hex: "657592")
     static let text_primary_f1 = Color.text_primary.opacity(0.8)

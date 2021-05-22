@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+fileprivate let HORIZONTAL_SPACING: CGFloat = 24
+
 struct HomeView: View {
     
     @StateObject private var viewModel = HomeViewModel()
@@ -52,7 +54,7 @@ fileprivate struct HomeHeaderView: View {
                     .padding(12).background(Color.primary_color)
                     .cornerRadius(20).modifier(NeuShadow())
             }
-        }.padding(.top, 12).padding(.horizontal, 16)
+        }.padding(.top, 12).padding(.horizontal, HORIZONTAL_SPACING)
     }
 }
 
@@ -62,7 +64,7 @@ fileprivate struct HomePlaylistView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text("Your Playlist").foregroundColor(.text_header)
-                .modifier(FontModifier(.bold, size: 20)).padding(.leading, 16)
+                .modifier(FontModifier(.bold, size: 20)).padding(.leading, HORIZONTAL_SPACING)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(0..<playlists.count, id: \.self) { i in
@@ -72,7 +74,7 @@ fileprivate struct HomePlaylistView: View {
                                          coverImage: playlists[i].coverImage)
                         }).padding(.top, 6).padding(.bottom, 40)
                     }
-                }.padding(.horizontal, 16)
+                }.padding(.horizontal, HORIZONTAL_SPACING)
             }
         }.padding(.top, 36)
     }
@@ -84,7 +86,8 @@ fileprivate struct HomeRecentlyPlayedView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text("Recently Played").foregroundColor(.text_header)
-                .modifier(FontModifier(.bold, size: 20)).padding(.leading, 16)
+                .modifier(FontModifier(.bold, size: 20))
+                .padding(.leading, HORIZONTAL_SPACING)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(0..<recentlyPlayed.count, id: \.self) { i in
@@ -94,7 +97,7 @@ fileprivate struct HomeRecentlyPlayedView: View {
                                           coverImage: recentlyPlayed[i].coverImage)
                         }).padding(.top, 6).padding(.bottom, 40)
                     }
-                }.padding(.horizontal, 16)
+                }.padding(.horizontal, HORIZONTAL_SPACING)
             }
         }
     }
@@ -107,10 +110,10 @@ fileprivate struct HomeMadeForView: View {
         VStack(alignment: .leading, spacing: 0) {
             Text("Made for You").foregroundColor(.text_header)
                 .modifier(FontModifier(.bold, size: 20))
-                .padding(.leading, 16)
+                .padding(.leading, HORIZONTAL_SPACING)
             Button(action: { onSelect(Data.MADE_FOR_YOU) }, label: {
                 MadeForView()
-            }).padding([.horizontal, .top], 16).padding(.bottom, 40)
+            }).padding([.horizontal, .top], HORIZONTAL_SPACING).padding(.bottom, 40)
         }
     }
 }

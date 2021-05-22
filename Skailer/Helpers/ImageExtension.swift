@@ -11,6 +11,7 @@ extension Image {
     
     // icons
     static let close = Image("arrow_down")
+    static let options = Image("options_icon")
     static let search = Image("search_icon")
     static let play = Image("play_icon")
     static let pause = Image("pause_icon")
